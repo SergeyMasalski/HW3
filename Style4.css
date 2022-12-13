@@ -1,0 +1,161 @@
+footer {
+    background-color: #F5F5F5;
+    padding: 20px 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.container {
+    width: 95%;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px 0;
+    background-color: #2A4F6E;
+    color: #fff;
+}
+.fleft {
+    float: left;
+}
+.cfix::before,
+.cfix::after {
+    content: "";
+    display: table;
+}
+.cfix::after {
+    clear: both;
+}
+.cont2 {
+    width: 35%;
+}
+.cont3 {
+    width: 25%;
+    margin-left: 20px;
+    position: relative;
+}
+#fb,
+#inst,
+#yout {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 42px;
+    height: 42px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#fb{
+    content: "";
+    background: url(Img4/fb_gray.png);
+    background-size: 100%;
+    position: relative;
+}
+#inst {
+    content: "";
+    background: url(Img4/insta_gray.png);
+    background-size: 100%;
+    position: relative;
+}
+#yout {
+    content: "";
+    background: url(Img4/youtube_gray.png);
+    background-size: 100%;
+    position: relative;
+}
+#fb1 {
+    content: url(Img4/fb.png);
+    position: absolute;
+    left: 0;
+    top: 0 ;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+}
+#inst1 {
+    content: url(Img4/insta.png);
+    left: 0;
+    top: 0 ;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+}
+#yout1 {
+    content: url(Img4/youtube.png);
+    left: 0;
+    top: 0 ;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+}
+#fb:hover>#fb1,
+#inst:hover>#inst1,
+#yout:hover>#yout1 {
+    width: 100%;
+    transition: 0.1s;
+}
+.cont1 {
+    width: 95%;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #5F7A91;
+    margin: auto;
+}
+.cont2>div {
+    width: 200px;
+    margin: auto;
+    line-height: 23px;
+}
+.cont4 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+body {
+    margin: 0;
+}
+.cont2>div:hover {
+    text-decoration: solid underline;
+}
+.navig {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    display: inline-block;
+    width: 15vw;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.navig>li {
+    height: 40px;
+    border: 1px black solid;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+    overflow: hidden;
+    border-radius: 0;
+    background-color: green;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgb(11, 233, 144);
+}
+.navig li div,
+.navig li a {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    box-sizing: border-box;
+}
+.navig>li:not(:first-of-type) {
+    display: none;
+}
+.navig:hover li {
+    display: block;
+}
+.navig li:hover {
+    box-shadow: 3px 3px 4px rgb(11, 233, 144),-3px -3px 4px rgb(11, 148, 233);
+    background: -webkit-radial-gradient(center, circle farthest-side,green,rgba(0, 128, 0, 0.8));
+}

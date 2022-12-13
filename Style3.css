@@ -1,0 +1,142 @@
+.container {
+    background-color: #F5F5F5;
+    width: 1000px;
+    margin: auto;
+    color: #fff;
+    padding:10px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+header,
+footer,
+.mcont,
+.menu {
+    margin: 5px 20px;
+}
+header {
+    height: 70px;
+    background-color: #923158;
+}
+footer,
+.menu {
+    background-color: #6E1237;
+    height: 50px;
+}
+.fleft {
+    float: left;
+    width: 300px;
+}
+.fright {
+    float: right;
+    background-color: #B65B80;
+    width: 150px;
+    height: 300px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding: 40px 70px;
+    word-break: break-all;
+    line-height: 25px;
+}
+.fleft1 {
+    background-color: #B65B80;
+    height: 100px;
+    margin-top: 5px;
+}
+.fleft2 {
+    background-color: #B65B80;
+    height: 200px;
+    margin-top: 5px;   
+}
+main {
+    height: 400px;
+    background-color: #B65B80;
+    width: 490px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+section {
+    width: 80%;
+    height: 100px;
+    background-color: #DB92AF;
+}
+.cfix::before,
+.cfix::after {
+    content: "";
+    display: table;
+}
+.cfix::after {
+    clear: both;
+}
+h3 {
+    margin: 0;
+    padding: 30px 49px 10px;
+}
+section {
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding: 20px 50px;
+}
+.fleft1,
+.fleft2 {
+    padding: 40px 80px 10px;
+    box-sizing: border-box;
+}
+.as3 {
+    margin-top: 30px;
+}
+.menu,
+footer {
+    box-sizing: border-box;
+    padding: 15px 40px;
+}
+header {
+    box-sizing: border-box;
+    padding: 25px 40px;
+}
+.navig {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    display: inline-block;
+    width: 15vw;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.navig>li {
+    height: 40px;
+    border: 1px black solid;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+    overflow: hidden;
+    border-radius: 0;
+    background-color: green;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgb(11, 233, 144);
+}
+.navig li div,
+.navig li a {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    box-sizing: border-box;
+}
+.navig>li:not(:first-of-type) {
+    display: none;
+}
+.navig:hover li {
+    display: block;
+}
+.navig li:hover {
+    box-shadow: 3px 3px 4px rgb(11, 233, 144),-3px -3px 4px rgb(11, 148, 233);
+    background: -webkit-radial-gradient(center, circle farthest-side,green,rgba(0, 128, 0, 0.8));
+}
